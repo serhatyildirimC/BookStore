@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Common;
 using WebApi.DbOperations;
@@ -8,10 +9,12 @@ namespace WebApi.BookOperations.CrateBook
     {
         public CreateBookModel Model {get; set;}
         private readonly BookStoreDbContext _dbContext;
+        private readonly IMapper _mapper;
 
-        public CreateBookCommand(BookStoreDbContext dbContext)
+        public CreateBookCommand(BookStoreDbContext dbContext, IMapper mapper)
         {
             _dbContext=dbContext;
+            _mapper=mapper;
         }
         public void Handle()
         {
@@ -20,11 +23,7 @@ namespace WebApi.BookOperations.CrateBook
             {
                 throw new InvalidOperationException("Kitap mevcut");
             }
-            book = new Book();
-            book.Title=Model.Title;
-            book.PublishDate=Model.PublishDate;
-            book.PageCount=Model.PageCount;
-            book.GenreId=Model.GenreId;
+            book = _mapper.Map<Book>(Model);                
             _dbContext.Books.Add(book);
             _dbContext.SaveChanges();
 

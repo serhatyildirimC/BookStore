@@ -36,3 +36,5 @@ C:\Users\90507\hello\BookStore\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Logg
 C:\Users\90507\hello\BookStore\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\90507\hello\BookStore\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\Users\90507\hello\BookStore\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\90507\hello\Bookstore\WebApi\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\90507\hello\Bookstore\WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
