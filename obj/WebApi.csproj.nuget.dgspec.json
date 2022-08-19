@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\90507\\hello\\Bookstore\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\90507\\hello\\Bookstore\\webApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\90507\\hello\\Bookstore\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\90507\\hello\\Bookstore\\webApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\90507\\hello\\Bookstore\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\90507\\hello\\Bookstore\\webApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\90507\\hello\\Bookstore\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\90507\\hello\\Bookstore\\webApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\90507\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\90507\\hello\\Bookstore\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\90507\\hello\\Bookstore\\webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\90507\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

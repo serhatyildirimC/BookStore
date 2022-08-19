@@ -10,26 +10,27 @@ namespace WebApi.BookOperations.GetBookById
         
         private readonly BookStoreDbContext _dbContext;
         private readonly IMapper _mapper;
+        public int bookId { get; set; }
 
         public GetByIdCommand (BookStoreDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
             _mapper = mapper;
         }
-        public BooksViewModel Handle(int id)
+        public BookViewModel Handle()
        {
-             var book = _dbContext.Books.SingleOrDefault(x=>x.Id == id);
+             var book = _dbContext.Books.SingleOrDefault(x=>x.Id == bookId);
             if (book is null)
             {
                 throw new InvalidOperationException("Kitap mevcut değil");
             }
-            var model = _mapper.Map<BooksViewModel>(book);
+            var model = _mapper.Map<BookViewModel>(book);
             return model;
 
 
         }
     }
-    public class BooksViewModel
+    public class BookViewModel
     {
             public string? Title { get; set; }
             public string Genre { get; set; }

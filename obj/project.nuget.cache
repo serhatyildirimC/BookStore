@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fRYDlwgwkmi3S8s5EPC75ORUmmDhhuxWSUaoi5XIfnnc+I/nGFWQwIJf/7AxuxYa9GQg4V3iyiEg3EHpXJemoQ==",
+  "dgSpecHash": "4cM3qv2xiPdpvV66greANiWkrkDY/o4eXEVvIIDAK7WmdBmw94rGo6qFN3r18dix0bTfbLnX+rliJmOx7QLbHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\90507\\hello\\Bookstore\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\90507\\hello\\Bookstore\\webApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\90507\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\90507\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\90507\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
     "C:\\Users\\90507\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\90507\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0-preview.7.22376.2\\microsoft.entityframeworkcore.7.0.0-preview.7.22376.2.nupkg.sha512",
     "C:\\Users\\90507\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0-preview.7.22376.2\\microsoft.entityframeworkcore.abstractions.7.0.0-preview.7.22376.2.nupkg.sha512",

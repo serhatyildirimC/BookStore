@@ -9,13 +9,14 @@ namespace WebApi.BookOperations.UpdateBook
         public UpdateBookModel Model {get; set;}
         private readonly BookStoreDbContext _dbContext;
 
+        public int bookId   { get; set; }
         public UpdateBookCommand(BookStoreDbContext dbContext)
         {
             _dbContext=dbContext;
         }
-        public void Handle(int id)
+        public void Handle()
         {
-             var book = _dbContext.Books.SingleOrDefault(x=>x.Id == id);
+             var book = _dbContext.Books.SingleOrDefault(x=>x.Id == bookId);
             if (book is null)
             {
                 throw new InvalidOperationException("Kitap mevcut değil");
